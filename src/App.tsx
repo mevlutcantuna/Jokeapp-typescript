@@ -19,7 +19,7 @@ const App: React.FC = () => {
         </div>
       ) : (
         <div>
-          {jokes[0] !== undefined ? (
+          {jokes !== undefined ? (
             <div>
               {jokes.map((joke: Joke) => {
                 return joke.type === "single" ? (
